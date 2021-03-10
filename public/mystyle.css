@@ -1,0 +1,230 @@
+body{
+  background-color: #E37554;
+  margin: 0 auto;
+font-family: 'Open Sans', sans-serif;
+background-image: url(wave-3.svg);
+background-position: top;
+background-repeat: no-repeat;
+
+
+}
+
+nav h1{
+  padding: 50px;
+  font-size: 2.3rem;
+ 
+}
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .flex_contact{
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+     
+    }
+    
+    
+
+    .button_flex{
+      display: flex;
+      flex-direction: row;
+    
+    }
+
+
+    input{
+      outline: none;
+      box-sizing: border-box;
+      border: none;
+      
+      background-color: #E37554 ;
+      color: white;
+    }
+
+
+    input::placeholder {
+      color: white;
+      }
+    .form{
+      padding: 10px;
+      margin-bottom: 10px;
+      position: relative;
+      width: 100%;
+    }
+
+    .form_label{
+      display: inline-block;
+      margin-bottom: 5px;
+     
+    }
+
+    .input{
+      border: 2px solid #f0f0f0;
+      border-radius: 4px;
+      display: block;
+      font-size: 14px;
+      min-width: 150px;
+      padding: 10px;
+      outline: none;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 1px solid white;
+      background-color: #E37554 ;
+      color: white;
+    }
+
+    .form small{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      visibility: hidden;
+    }
+
+    .button{
+      text-align: center;
+      font-size: 1.1rem;
+     
+      flex-direction: row;
+     background-color: #E0D2A4;
+     color: black;
+     outline: #f0f0f0;
+
+     border-radius: 5px;
+     padding: 14px 40px;
+    }
+ 
+.outer_flexbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+
+
+}
+
+.text_flexbox{
+  display: flex;
+  flex-direction: column;
+  
+
+
+ 
+}
+
+.svg_form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+
+
+
+
+}
+
+.survey{
+  margin-bottom: 50px;
+}
+
+
+
+
+
+@media only screen and (max-width: 900px){
+
+.logo{
+  display: flex;
+  text-align: center;
+margin-top: -30px;
+}
+
+.outer_flexbox{
+  flex-direction: column;
+  margin-top: -30px;
+}
+
+.text_flexbox{
+  align-items: center;
+  
+}
+
+.svg{
+  display: none;
+}
+
+.text_flexbox h4{
+  display: none;
+}
+
+.desktop_text{
+  display: none;
+}
+
+
+.text_flexbox h1{
+ margin-left: 0;
+ font-size: 1.5rem;
+ text-align: center;
+
+}
+
+.button_flex{
+  flex-direction: column;
+  max-width: 150px;
+
+}
+.button{
+  margin-top: 10px;
+}
+.svg_form{
+ align-items: center;
+ width: 100%;
+
+}
+
+
+
+input{
+text-align: center;
+}
+
+
+
+.mobile_text{
+  text-align: center;
+  margin: 0 20px;
+  font-size: 1.2rem;
+}
+
+.survey{
+  display: none;
+}
+
+
+}
+
+
+
+@media only screen and (min-width: 900px){
+
+  .button{
+    margin-left: 70px;
+  }
+
+  .text_flexbox{
+    margin-left: 100px;
+  margin-right: 50px;
+  width: 30%;
+
+  }
+
+.mobile_text{
+  display: none;
+}
+
+
+}
