@@ -2,12 +2,12 @@ const express = require('express');
 const request = require('request');
 const bodyParser = require('body-parser');
 const path = require('path');
-const { response } = require('express');
+
 
 const app = express();
 
 //bodyparser middleware
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 
 //static folder
@@ -38,7 +38,7 @@ const data = {
             }
         }
     ]
-}
+};
 
 const postData = JSON.stringify(data);
 
@@ -48,7 +48,7 @@ const options = {
     url: 'https://us1.api.mailchimp.com/3.0/lists/bb90272f39',
     method: 'POST',
     headers: {
-        Authorization:'e4250703d5b69cdd399480700fbcb129-us1'
+        Authorization:'auth e4250703d5b69cdd399480700fbcb129-us1'
     }, 
     body: postData
 };
