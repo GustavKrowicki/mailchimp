@@ -48,7 +48,7 @@ const options = {
     url: 'https://us1.api.mailchimp.com/3.0/lists/bb90272f39',
     method: 'POST',
     headers: {
-        Authorization:'auth 54b70a9ef1d9b8e299b6223d9ca1279f-us1'
+        Authorization:'auth bbf842c0e8097e64213af6078660d5b5-us1'
     }, 
     body: postData
 };
