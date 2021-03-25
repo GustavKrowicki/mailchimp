@@ -61,7 +61,7 @@ if (err) {
         res.redirect('/succes.html')
     } else {
         res.redirect('/failed.html')
-    }
+    } 
 }
 });
 

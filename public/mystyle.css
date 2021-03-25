@@ -1,5 +1,5 @@
 body{
-  background-color: #E37554;
+  background-color: rgb(218, 218, 218);
   margin: 0 auto;
 font-family: 'Open Sans', sans-serif;
 background-image: url(wave-3.svg);
@@ -47,7 +47,7 @@ nav h1{
 
 
     input::placeholder {
-      color: white;
+      color:gray;
       }
     .form{
       padding: 10px;
@@ -72,10 +72,15 @@ nav h1{
       outline: none;
       box-sizing: border-box;
       border: none;
-      border-bottom: 1px solid white;
-      background-color: #E37554 ;
-      color: white;
+      background-color: rgb(247, 247, 247);
+      
     }
+
+.input::active{
+  border-bottom: 2px solid black;
+}
+
+
 
     .form small{
       position: absolute;
@@ -89,7 +94,7 @@ nav h1{
       font-size: 1.1rem;
      
       flex-direction: row;
-     background-color: #E0D2A4;
+     background-color:darkgray;
      color: black;
      outline: #f0f0f0;
 
@@ -101,6 +106,7 @@ nav h1{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  
 
 
 
@@ -109,11 +115,21 @@ nav h1{
 .text_flexbox{
   display: flex;
   flex-direction: column;
+ 
   
 
 
  
 }
+
+.svg{
+width: 100%;
+
+}
+
+
+
+
 
 .svg_form{
   display: flex;
@@ -153,6 +169,7 @@ margin-top: -30px;
 }
 
 .svg{
+
   display: none;
 }
 
@@ -224,6 +241,10 @@ text-align: center;
 
 .mobile_text{
   display: none;
+}
+
+.outer_flexbox{
+  margin-top: -50px;
 }
 
 

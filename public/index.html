@@ -50,7 +50,7 @@ Interesseret? så skriv dig op til vores mail liste her
 
  <div class="flex_contact">
     <div class="form">
-    <form action="/signup" method="POST">
+    <form action="/signup" method="POST" id="form1">
      <label class="form_label"> Dit navn</label>
 <input type="text"id="Navn" name="Navn" class="form-control input" placeholder="f.eks. Lars" required>
 
@@ -58,7 +58,8 @@ Interesseret? så skriv dig op til vores mail liste her
  </div>
  <div class="form">
      <label class="form_label"> Din email</label>
-<input type="text"id="email" name="email" placeholder="Din email" required class="input">
+<input type="text"id="email" name="email" placeholder="Din email" required class="input"  onfocusout="validation()">
+<span id="text"></span>
 <small>Error message</small>
 </div>
 <div class="form ">
@@ -84,7 +85,7 @@ Interesseret? så skriv dig op til vores mail liste her
 
 <div class="svg_form">
 
-<img src="lidt-mad-ik1.svg" alt="mad" class="svg">
+<img src="Component 2 – 1.png" alt="mad" class="svg">
 
 
 
@@ -107,6 +108,44 @@ Interesseret? så skriv dig op til vores mail liste her
 
 
 </div>
+
+
+<script type="text/javascript">
+
+
+
+
+    function validation(){
+        var form = document.getElementById("form1");
+        var email = document.getElementById("email").value;
+        var text = document.getElementById("text");
+        var pattern = /^[^ ]+@[^ ]+\.([a-z]{1,3})$/;
+         
+        if (email.match(pattern)){
+            form.classList.add("valid");
+            form.classList.remove("invalid");
+          
+        }
+        else{
+            form.classList.remove("valid")
+            form.classList.add("invalid");
+            text.innerHTML = "Please enter valid email";
+            text.style.color = "#ff0000";
+        }
+        }
+    
+    
+   
+    
+    
+    
+    </script>
+
+
+
+
+
+
 
 
 
